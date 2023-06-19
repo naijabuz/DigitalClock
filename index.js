@@ -13,7 +13,7 @@ const digitalClock = function digitalClock() {
     let ampm = 'AM'; // new value for the daytype
 
 // If statement to change the clock setting from 24hrs to 12hrs and to also auto update between AM and PM
-    if (hr > 12) {
+    if (hr >= 12) {
         hr = hr - 12;
         ampm = "PM";
     };
