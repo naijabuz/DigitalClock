@@ -41,8 +41,8 @@ body main div.clock div {
 body main div.clock div span {
     color: white;
     background-color: orangered;
-    max-height: 80px;
-    max-width: 100px;
+    height: 80px;
+    width: 100px;
     opacity: 90%;
     display: flex;
     align-items: center;
@@ -55,19 +55,21 @@ body > main > div.clock > div > span.text {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    max-height: 30px;
+    height: 30px;
     background-color: rgb(198, 53, 0);
 }
 
 body main div.clock div.daytype span {
     position: absolute;
     bottom: 0;
-    max-height: 30px;
+    height: 30px;
     background-color: rgb(0, 0, 0);
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+
 
 
 
