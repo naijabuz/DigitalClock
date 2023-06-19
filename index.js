@@ -10,7 +10,7 @@ const digitalClock = function digitalClock() {
     let secs = new Date().getSeconds();
     let ampm = 'AM';
 
-    if (hr > 12) {
+    if (hr < 12) {
         hr = hr - 12;
         ampm = "PM";
     };
