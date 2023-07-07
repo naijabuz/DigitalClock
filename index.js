@@ -7,7 +7,7 @@ const digitalClock = function digitalClock() {
     const seconds = document.getElementById("seconds"); // ditto
     const daytype = document.getElementById("ampm"); // ditto
 
-    let hr = new Date().getHours(); // hour value (number) is stored in variable
+    let hr = "KAI" // hour value (number) is stored in variable
     let mins = new Date().getMinutes(); // minute value (number) is stored in variable
     let secs = new Date().getSeconds(); // seconds value (number) is stored in variable
     let ampm = 'AM'; // new value for the daytype
