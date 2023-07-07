@@ -7,7 +7,7 @@ const digitalClock = function digitalClock() {
     const seconds = document.getElementById("seconds"); // ditto
     const daytype = document.getElementById("ampm"); // ditto
 
-    let hr = "KAI" // hour value (number) is stored in variable
+    let hr = new Date().getHours(); // hour value (number) is stored in variable
     let mins = new Date().getMinutes(); // minute value (number) is stored in variable
     let secs = new Date().getSeconds(); // seconds value (number) is stored in variable
     let ampm = 'AM'; // new value for the daytype
@@ -16,8 +16,8 @@ const digitalClock = function digitalClock() {
     if (hr > 12) {
         hr = hr - 12;
         ampm = "PM";
-    } else if (hr = 12) {
-        ampm = "PM"
+    } else if (hr === 12) {
+        ampm = "PM";
     };
 
 // ternary if statement to add 0 in front of the time values when they are between 0 to 9
